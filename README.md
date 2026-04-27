@@ -22,24 +22,34 @@ Dark, minimal prototype for smart resource allocation between NGOs and volunteer
 ```bash
 AidFlow/
 │
-├── index.html              # Main frontend UI
-├── styles.css              # Styling for the application
-├── app.js                  # Frontend logic (UI + API calls)
-├── package.json            # Project configuration & scripts
-├── README.md               # Project documentation
-├── .env.example            # Environment variable template
-│
-├── assets/                 # Images, logos, static assets
+├── assets/
 │   └── aidflow-logo.png
 │
-├── server/                 # Backend (Node.js)
-│   ├── server.js           # Main server & API routes
-│   └── mock-store.js       # In-memory data & auth logic
+├── docs/
+│   └── diagrams/
+│       ├── architecture-diagram.svg
+│       ├── process-flow-diagram.svg
+│       ├── use-case-diagram.svg
+│       └── TECHNOLOGIES.md
 │
-├── diagrams/ (optional)    # Architecture / flow diagrams
+├── node_modules/
+│   ├── @google/
+│   └── .package-lock.json
 │
-└── sample-data/            # Sample reports for testing
-    └── sample-emergency-report.doc
+├── server/
+│   ├── mock-store.js
+│   └── server.js
+│
+├── .env.example
+├── app.js
+├── index.html
+├── package-lock.json
+├── package.json
+├── README.md
+├── sample-emergency-report.doc
+├── server.stderr.log
+├── server.stdout.log
+└── styles.css
 ```
 
 ## Run
