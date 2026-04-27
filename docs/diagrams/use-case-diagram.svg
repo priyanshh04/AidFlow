@@ -1,0 +1,82 @@
+<svg width="1600" height="920" viewBox="0 0 1600 920" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1600" height="920" fill="#F4F8FA"/>
+  <rect x="55" y="45" width="1490" height="830" rx="28" fill="white" stroke="#D5E2E5" stroke-width="2"/>
+  <text x="90" y="105" fill="#12435A" font-family="Segoe UI, Arial, sans-serif" font-size="34" font-weight="700">AidFlow Use-Case Diagram</text>
+  <text x="90" y="142" fill="#5A768A" font-family="Segoe UI, Arial, sans-serif" font-size="18">Hybrid model: NGOs create verified tasks, volunteers respond and contribute structured observations for review.</text>
+
+  <defs>
+    <marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto">
+      <path d="M0 0L12 6L0 12V0Z" fill="#3271A8"/>
+    </marker>
+  </defs>
+
+  <circle cx="170" cy="285" r="48" fill="#E9F3FF" stroke="#3271A8" stroke-width="3"/>
+  <line x1="170" y1="334" x2="170" y2="414" stroke="#3271A8" stroke-width="4"/>
+  <line x1="130" y1="367" x2="210" y2="367" stroke="#3271A8" stroke-width="4"/>
+  <line x1="170" y1="414" x2="132" y2="470" stroke="#3271A8" stroke-width="4"/>
+  <line x1="170" y1="414" x2="208" y2="470" stroke="#3271A8" stroke-width="4"/>
+  <text x="104" y="530" fill="#12435A" font-family="Segoe UI, Arial, sans-serif" font-size="24" font-weight="700">Verified NGO</text>
+
+  <circle cx="170" cy="655" r="48" fill="#EAF8F0" stroke="#37A66B" stroke-width="3"/>
+  <line x1="170" y1="704" x2="170" y2="784" stroke="#37A66B" stroke-width="4"/>
+  <line x1="130" y1="737" x2="210" y2="737" stroke="#37A66B" stroke-width="4"/>
+  <line x1="170" y1="784" x2="132" y2="840" stroke="#37A66B" stroke-width="4"/>
+  <line x1="170" y1="784" x2="208" y2="840" stroke="#37A66B" stroke-width="4"/>
+  <text x="124" y="900" fill="#17543A" font-family="Segoe UI, Arial, sans-serif" font-size="24" font-weight="700">Volunteer</text>
+
+  <circle cx="1430" cy="470" r="48" fill="#FFF4E4" stroke="#DB9D38" stroke-width="3"/>
+  <line x1="1430" y1="519" x2="1430" y2="599" stroke="#DB9D38" stroke-width="4"/>
+  <line x1="1390" y1="552" x2="1470" y2="552" stroke="#DB9D38" stroke-width="4"/>
+  <line x1="1430" y1="599" x2="1392" y2="655" stroke="#DB9D38" stroke-width="4"/>
+  <line x1="1430" y1="599" x2="1468" y2="655" stroke="#DB9D38" stroke-width="4"/>
+  <text x="1323" y="715" fill="#80520C" font-family="Segoe UI, Arial, sans-serif" font-size="24" font-weight="700">Admin / AI Layer</text>
+
+  <rect x="370" y="190" width="860" height="575" rx="36" fill="#F9FCFF" stroke="#D3E0F3" stroke-width="3"/>
+  <text x="410" y="245" fill="#12435A" font-family="Segoe UI, Arial, sans-serif" font-size="28" font-weight="700">AidFlow System</text>
+
+  <ellipse cx="585" cy="325" rx="150" ry="48" fill="white" stroke="#3271A8" stroke-width="3"/>
+  <text x="495" y="333" fill="#12435A" font-family="Segoe UI, Arial, sans-serif" font-size="22" font-weight="700">Login / Signup</text>
+
+  <ellipse cx="585" cy="435" rx="150" ry="48" fill="white" stroke="#3271A8" stroke-width="3"/>
+  <text x="468" y="443" fill="#12435A" font-family="Segoe UI, Arial, sans-serif" font-size="22" font-weight="700">Upload Need Report</text>
+
+  <ellipse cx="585" cy="545" rx="175" ry="48" fill="white" stroke="#3271A8" stroke-width="3"/>
+  <text x="440" y="553" fill="#12435A" font-family="Segoe UI, Arial, sans-serif" font-size="22" font-weight="700">Create Verified Task</text>
+
+  <ellipse cx="585" cy="655" rx="175" ry="48" fill="white" stroke="#3271A8" stroke-width="3"/>
+  <text x="450" y="663" fill="#12435A" font-family="Segoe UI, Arial, sans-serif" font-size="22" font-weight="700">Monitor Task Progress</text>
+
+  <ellipse cx="1015" cy="305" rx="185" ry="48" fill="white" stroke="#37A66B" stroke-width="3"/>
+  <text x="872" y="313" fill="#17543A" font-family="Segoe UI, Arial, sans-serif" font-size="22" font-weight="700">Gemini Document Analysis</text>
+
+  <ellipse cx="1015" cy="415" rx="185" ry="48" fill="white" stroke="#37A66B" stroke-width="3"/>
+  <text x="855" y="423" fill="#17543A" font-family="Segoe UI, Arial, sans-serif" font-size="22" font-weight="700">Find NGOs / Volunteers in 25 km</text>
+
+  <ellipse cx="1015" cy="525" rx="175" ry="48" fill="white" stroke="#37A66B" stroke-width="3"/>
+  <text x="887" y="533" fill="#17543A" font-family="Segoe UI, Arial, sans-serif" font-size="22" font-weight="700">Accept / Reject Task</text>
+
+  <ellipse cx="1015" cy="635" rx="185" ry="48" fill="white" stroke="#37A66B" stroke-width="3"/>
+  <text x="874" y="643" fill="#17543A" font-family="Segoe UI, Arial, sans-serif" font-size="22" font-weight="700">Submit Feedback / Observation</text>
+
+  <path d="M218 285H435" stroke="#3271A8" stroke-width="4" marker-end="url(#arrow)"/>
+  <path d="M218 305C295 305 340 325 435 325" stroke="#3271A8" stroke-width="4" fill="none" marker-end="url(#arrow)"/>
+  <path d="M218 355C330 355 350 435 435 435" stroke="#3271A8" stroke-width="4" fill="none" marker-end="url(#arrow)"/>
+  <path d="M218 385C330 385 355 545 410 545" stroke="#3271A8" stroke-width="4" fill="none" marker-end="url(#arrow)"/>
+  <path d="M218 420C320 420 360 655 410 655" stroke="#3271A8" stroke-width="4" fill="none" marker-end="url(#arrow)"/>
+
+  <path d="M218 655H840" stroke="#37A66B" stroke-width="4" marker-end="url(#arrow)"/>
+  <path d="M218 675C390 675 600 525 840 525" stroke="#37A66B" stroke-width="4" fill="none" marker-end="url(#arrow)"/>
+  <path d="M218 695C385 695 530 635 830 635" stroke="#37A66B" stroke-width="4" fill="none" marker-end="url(#arrow)"/>
+  <path d="M218 615C410 615 650 415 830 415" stroke="#37A66B" stroke-width="4" fill="none" marker-end="url(#arrow)"/>
+  <path d="M218 585C420 585 600 325 830 305" stroke="#37A66B" stroke-width="4" fill="none" marker-end="url(#arrow)"/>
+
+  <path d="M1230 470H1382" stroke="#DB9D38" stroke-width="4" marker-end="url(#arrow)"/>
+  <path d="M1200 305C1290 305 1320 360 1382 430" stroke="#DB9D38" stroke-width="4" fill="none" marker-end="url(#arrow)"/>
+  <path d="M1200 635C1295 635 1332 570 1382 510" stroke="#DB9D38" stroke-width="4" fill="none" marker-end="url(#arrow)"/>
+
+  <path d="M735 435C775 435 810 380 840 340" stroke="#8AA6C3" stroke-width="3" stroke-dasharray="10 8" fill="none"/>
+  <text x="742" y="402" fill="#5A768A" font-family="Segoe UI, Arial, sans-serif" font-size="16">includes</text>
+
+  <path d="M760 545C805 545 815 470 840 440" stroke="#8AA6C3" stroke-width="3" stroke-dasharray="10 8" fill="none"/>
+  <text x="772" y="512" fill="#5A768A" font-family="Segoe UI, Arial, sans-serif" font-size="16">includes</text>
+</svg>

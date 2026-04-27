@@ -1,0 +1,81 @@
+<svg width="1600" height="900" viewBox="0 0 1600 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1600" height="900" fill="#F5F8FC"/>
+  <rect x="50" y="40" width="1500" height="820" rx="28" fill="white" stroke="#D9E2F2" stroke-width="2"/>
+  <text x="90" y="105" fill="#153B72" font-family="Segoe UI, Arial, sans-serif" font-size="34" font-weight="700">AidFlow Process Flow Diagram</text>
+  <text x="90" y="142" fill="#55708F" font-family="Segoe UI, Arial, sans-serif" font-size="18">Verified NGO task creation, Gemini-assisted report analysis, 25 km matching, volunteer response, and feedback loop.</text>
+
+  <defs>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="8" stdDeviation="10" flood-color="#C6D4E8" flood-opacity="0.55"/>
+    </filter>
+    <marker id="arrowBlue" markerWidth="14" markerHeight="14" refX="11" refY="7" orient="auto">
+      <path d="M0 0L14 7L0 14V0Z" fill="#2E7DDB"/>
+    </marker>
+    <marker id="arrowGreen" markerWidth="14" markerHeight="14" refX="11" refY="7" orient="auto">
+      <path d="M0 0L14 7L0 14V0Z" fill="#37A66B"/>
+    </marker>
+  </defs>
+
+  <rect x="90" y="210" width="260" height="128" rx="24" fill="#EAF2FF" stroke="#2E7DDB" stroke-width="2" filter="url(#shadow)"/>
+  <text x="118" y="248" fill="#153B72" font-family="Segoe UI, Arial, sans-serif" font-size="22" font-weight="700">1. NGO Login</text>
+  <text x="118" y="276" fill="#153B72" font-family="Segoe UI, Arial, sans-serif" font-size="22" font-weight="700">/ Signup</text>
+  <text x="118" y="306" fill="#35506D" font-family="Segoe UI, Arial, sans-serif" font-size="18">Verified organization</text>
+  <text x="118" y="330" fill="#35506D" font-family="Segoe UI, Arial, sans-serif" font-size="18">accesses AidFlow</text>
+
+  <rect x="390" y="210" width="250" height="120" rx="24" fill="#EEF9F2" stroke="#37A66B" stroke-width="2" filter="url(#shadow)"/>
+  <text x="425" y="257" fill="#17543A" font-family="Segoe UI, Arial, sans-serif" font-size="24" font-weight="700">2. Upload Report</text>
+  <text x="425" y="292" fill="#2D5D4B" font-family="Segoe UI, Arial, sans-serif" font-size="18">PDF / Word / PPT</text>
+  <text x="425" y="318" fill="#2D5D4B" font-family="Segoe UI, Arial, sans-serif" font-size="18">with field notes</text>
+
+  <rect x="690" y="210" width="250" height="120" rx="24" fill="#FFF6E7" stroke="#E2A53B" stroke-width="2" filter="url(#shadow)"/>
+  <text x="728" y="257" fill="#80520C" font-family="Segoe UI, Arial, sans-serif" font-size="24" font-weight="700">3. Gemini Analysis</text>
+  <text x="728" y="292" fill="#7A6237" font-family="Segoe UI, Arial, sans-serif" font-size="18">Need type, urgency,</text>
+  <text x="728" y="318" fill="#7A6237" font-family="Segoe UI, Arial, sans-serif" font-size="18">skills, requirements</text>
+
+  <rect x="990" y="210" width="250" height="120" rx="24" fill="#EAF2FF" stroke="#2E7DDB" stroke-width="2" filter="url(#shadow)"/>
+  <text x="1028" y="257" fill="#153B72" font-family="Segoe UI, Arial, sans-serif" font-size="24" font-weight="700">4. Prioritize Task</text>
+  <text x="1028" y="292" fill="#35506D" font-family="Segoe UI, Arial, sans-serif" font-size="18">Create verified task</text>
+  <text x="1028" y="318" fill="#35506D" font-family="Segoe UI, Arial, sans-serif" font-size="18">and assign severity</text>
+
+  <rect x="1225" y="210" width="270" height="120" rx="24" fill="#EEF9F2" stroke="#37A66B" stroke-width="2" filter="url(#shadow)"/>
+  <text x="1255" y="257" fill="#17543A" font-family="Segoe UI, Arial, sans-serif" font-size="24" font-weight="700">5. Radius Search</text>
+  <text x="1255" y="292" fill="#2D5D4B" font-family="Segoe UI, Arial, sans-serif" font-size="18">Find NGOs and volunteers</text>
+  <text x="1255" y="318" fill="#2D5D4B" font-family="Segoe UI, Arial, sans-serif" font-size="18">within a 25 km radius</text>
+
+  <rect x="220" y="510" width="280" height="120" rx="24" fill="#F7F0FF" stroke="#8A61D2" stroke-width="2" filter="url(#shadow)"/>
+  <text x="256" y="557" fill="#513089" font-family="Segoe UI, Arial, sans-serif" font-size="24" font-weight="700">6. Notify Volunteers</text>
+  <text x="256" y="592" fill="#5D4D7A" font-family="Segoe UI, Arial, sans-serif" font-size="18">Skill + distance matched</text>
+  <text x="256" y="618" fill="#5D4D7A" font-family="Segoe UI, Arial, sans-serif" font-size="18">responders receive task</text>
+
+  <rect x="555" y="510" width="310" height="120" rx="24" fill="#EAF2FF" stroke="#2E7DDB" stroke-width="2" filter="url(#shadow)"/>
+  <text x="590" y="557" fill="#153B72" font-family="Segoe UI, Arial, sans-serif" font-size="24" font-weight="700">7. Notify NGOs</text>
+  <text x="590" y="592" fill="#35506D" font-family="Segoe UI, Arial, sans-serif" font-size="18">Nearby partners receive</text>
+  <text x="590" y="618" fill="#35506D" font-family="Segoe UI, Arial, sans-serif" font-size="18">support and resource alerts</text>
+
+  <rect x="920" y="510" width="280" height="120" rx="24" fill="#EEF9F2" stroke="#37A66B" stroke-width="2" filter="url(#shadow)"/>
+  <text x="964" y="557" fill="#17543A" font-family="Segoe UI, Arial, sans-serif" font-size="24" font-weight="700">8. Accept / Reject</text>
+  <text x="964" y="592" fill="#2D5D4B" font-family="Segoe UI, Arial, sans-serif" font-size="18">Volunteers confirm</text>
+  <text x="964" y="618" fill="#2D5D4B" font-family="Segoe UI, Arial, sans-serif" font-size="18">availability</text>
+
+  <rect x="1270" y="510" width="190" height="120" rx="24" fill="#FFF6E7" stroke="#E2A53B" stroke-width="2" filter="url(#shadow)"/>
+  <text x="1300" y="557" fill="#80520C" font-family="Segoe UI, Arial, sans-serif" font-size="24" font-weight="700">9. Track Status</text>
+  <text x="1300" y="592" fill="#7A6237" font-family="Segoe UI, Arial, sans-serif" font-size="18">Pending</text>
+  <text x="1300" y="618" fill="#7A6237" font-family="Segoe UI, Arial, sans-serif" font-size="18">In progress / Done</text>
+
+  <rect x="510" y="695" width="590" height="115" rx="24" fill="#153B72"/>
+  <text x="552" y="744" fill="white" font-family="Segoe UI, Arial, sans-serif" font-size="24" font-weight="700">10. Feedback and contribution history</text>
+  <text x="552" y="778" fill="white" font-family="Segoe UI, Arial, sans-serif" font-size="24" font-weight="700">improve future allocation</text>
+
+  <path d="M350 274H390" stroke="#2E7DDB" stroke-width="5" marker-end="url(#arrowBlue)"/>
+  <path d="M640 270H690" stroke="#37A66B" stroke-width="5" marker-end="url(#arrowGreen)"/>
+  <path d="M940 270H990" stroke="#2E7DDB" stroke-width="5" marker-end="url(#arrowBlue)"/>
+  <path d="M1240 270H1240" stroke="#37A66B" stroke-width="5"/>
+  <path d="M1360 330V420H1060V510" stroke="#37A66B" stroke-width="5" fill="none" marker-end="url(#arrowGreen)"/>
+  <path d="M1360 330V410H710V510" stroke="#2E7DDB" stroke-width="5" fill="none" marker-end="url(#arrowBlue)"/>
+  <path d="M1365 330V400H360V510" stroke="#8A61D2" stroke-width="5" fill="none" marker-end="url(#arrowBlue)"/>
+  <path d="M500 570H570" stroke="#2E7DDB" stroke-width="5" marker-end="url(#arrowBlue)"/>
+  <path d="M850 570H920" stroke="#37A66B" stroke-width="5" marker-end="url(#arrowGreen)"/>
+  <path d="M1200 570H1270" stroke="#E2A53B" stroke-width="5" marker-end="url(#arrowBlue)"/>
+  <path d="M1365 630V690H1010" stroke="#2E7DDB" stroke-width="5" fill="none" marker-end="url(#arrowBlue)"/>
+  <path d="M510 752H500C400 752 330 670 330 630" stroke="#37A66B" stroke-width="5" fill="none" marker-end="url(#arrowGreen)"/>
+</svg>

@@ -1,0 +1,236 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AidFlow | NGO Volunteer Coordination</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <section id="authScreen" class="auth-screen">
+      <div class="auth-card">
+        <div class="auth-brand">
+          <img src="assets/aidflow-logo.png" alt="AidFlow logo" />
+          <div>
+            <p class="eyebrow">Verified coordination platform</p>
+            <h1>AidFlow</h1>
+          </div>
+        </div>
+
+        <div class="auth-tabs" aria-label="Authentication mode">
+          <button class="auth-tab active" type="button" data-auth-mode="login">Login</button>
+          <button class="auth-tab" type="button" data-auth-mode="signup">Sign up</button>
+        </div>
+
+        <form id="authForm" class="auth-form">
+          <label>
+            Account type
+            <select id="accountType">
+              <option value="ngo">Verified NGO / organization</option>
+              <option value="volunteer">Volunteer</option>
+            </select>
+          </label>
+
+          <label id="orgNameWrap">
+            Organization name
+            <input id="orgName" type="text" value="CareBridge Foundation" />
+          </label>
+
+          <label>
+            Email
+            <input id="email" type="email" value="operator@aidflow.org" required />
+          </label>
+
+          <label>
+            Password
+            <input id="password" type="password" value="aidflow-demo" required />
+          </label>
+
+          <div id="verificationNote" class="verification-note">
+            NGO accounts can publish official tasks after verification. Volunteers can accept tasks and submit field observations for review.
+          </div>
+
+          <button id="authSubmit" type="submit" class="primary-button">Login</button>
+        </form>
+      </div>
+    </section>
+
+    <main id="appShell" class="shell is-hidden">
+      <aside class="sidebar" aria-label="Workspace navigation">
+        <div class="brand">
+          <img class="brand-logo" src="assets/aidflow-logo.png" alt="AidFlow logo" />
+          <div>
+            <p>AidFlow</p>
+            <span>Resource allocation prototype</span>
+          </div>
+        </div>
+
+        <nav class="nav-list" aria-label="Primary">
+          <a href="#overview" class="active">Overview</a>
+          <a href="#report">New report</a>
+          <a href="#matches">Matches</a>
+          <a href="#map">Network</a>
+        </nav>
+
+        <section class="account-card" aria-label="Signed in account">
+          <span>Signed in as</span>
+          <strong id="signedInName">CareBridge Foundation</strong>
+          <p id="signedInRole">Verified NGO</p>
+          <button id="logoutButton" class="ghost-button" type="button">Log out</button>
+        </section>
+
+      </aside>
+
+      <section class="content">
+        <header class="topbar">
+          <div>
+            <p class="eyebrow">Smart Resource Allocation</p>
+            <h1>Coordinate urgent social impact tasks across NGOs and volunteers.</h1>
+          </div>
+          <div class="top-actions">
+            <button id="seedScenario" class="ghost-button">Load emergency demo</button>
+            <button id="clearActivity" class="icon-button" aria-label="Clear activity log" title="Clear activity log">
+              <span aria-hidden="true">x</span>
+            </button>
+          </div>
+        </header>
+
+        <section id="overview" class="metrics-grid" aria-label="Current platform metrics">
+          <article class="metric">
+            <span>Open reports</span>
+            <strong id="openReports">3</strong>
+            <p>Needs waiting for assignment</p>
+          </article>
+          <article class="metric">
+            <span>Available volunteers</span>
+            <strong id="availableVolunteers">8</strong>
+            <p>Skill and distance filtered</p>
+          </article>
+          <article class="metric">
+            <span>NGO partners</span>
+            <strong id="partnerNgos">5</strong>
+            <p>Nearby support network</p>
+          </article>
+          <article class="metric accent">
+            <span>Avg. response radius</span>
+            <strong id="avgRadius">4.8 km</strong>
+            <p>For top recommendations</p>
+          </article>
+        </section>
+
+        <section class="workspace-grid">
+          <article id="report" class="panel intake-panel">
+            <div class="panel-heading">
+              <div>
+                <p class="eyebrow">NGO intake</p>
+                <h2>Submit community need</h2>
+              </div>
+              <span id="urgencyBadge" class="status-pill medium">Medium</span>
+            </div>
+
+            <form id="reportForm" class="report-form">
+              <label class="file-drop" for="reportFile">
+                <span>Upload field report</span>
+                <strong id="fileName">PDF, Word, or PowerPoint</strong>
+                <small>The prototype reads available document text and runs a local NLP-style extraction.</small>
+                <input
+                  id="reportFile"
+                  type="file"
+                  accept=".pdf,.doc,.docx,.ppt,.pptx,application/pdf,application/msword,application/vnd.openxmlformats-officedocument.wordprocessingml.document,application/vnd.ms-powerpoint,application/vnd.openxmlformats-officedocument.presentationml.presentation"
+                  required
+                />
+              </label>
+
+              <label>
+                Report area
+                <select id="location" required>
+                  <option value="sector-62">Sector 62, Noida</option>
+                  <option value="botanical">Botanical Garden, Noida</option>
+                  <option value="pari-chowk">Pari Chowk, Greater Noida</option>
+                  <option value="vaishali">Vaishali, Ghaziabad</option>
+                </select>
+              </label>
+
+              <label>
+                Extra notes for prototype analysis
+                <textarea id="reportNotes" rows="5" placeholder="Optional: paste report text if the browser cannot extract readable text from the uploaded document.">Urgent dry ration support required for families near a shelter cluster. Need quick sorting, packing, and distribution help for 85 people.</textarea>
+              </label>
+
+              <button type="submit" class="primary-button">Analyze document and match</button>
+            </form>
+
+            <div class="analysis-card" aria-live="polite">
+              <p class="eyebrow">Gemini AI extraction</p>
+              <div id="analysisSummary" class="analysis-summary">
+                Upload a report to generate structured requirements.
+              </div>
+            </div>
+          </article>
+
+          <article id="map" class="panel map-panel">
+            <div class="panel-heading">
+              <div>
+                <p class="eyebrow">Network view</p>
+                <h2>Local NGO and volunteer network</h2>
+              </div>
+              <span id="mapMode" class="status-pill low">25 km radius</span>
+            </div>
+
+            <form id="mapSearchForm" class="map-search">
+              <input id="mapSearchInput" type="search" placeholder="Search any location for nearby drives" value="Sector 62, Noida" />
+              <button class="ghost-button" type="submit">Search</button>
+            </form>
+
+            <div id="mapCanvas" class="map-canvas" role="img" aria-label="Map of local NGOs and volunteers">
+              <div class="map-grid"></div>
+              <div class="map-route"></div>
+            </div>
+
+            <div class="map-legend">
+              <span><i class="pin issue"></i> Active issue</span>
+              <span><i class="pin volunteer"></i> Volunteer</span>
+              <span><i class="pin ngo"></i> NGO partner</span>
+              <span id="radiusLabel">Searching within 25 km</span>
+            </div>
+          </article>
+        </section>
+
+        <section id="matches" class="lower-grid">
+          <article class="panel">
+            <div class="panel-heading">
+              <div>
+                <p class="eyebrow">Matching engine</p>
+                <h2>Recommended volunteers</h2>
+              </div>
+              <span id="matchCount" class="status-pill high">0 matched</span>
+            </div>
+            <div id="volunteerList" class="list-stack"></div>
+          </article>
+
+          <article class="panel">
+            <div class="panel-heading">
+              <div>
+                <p class="eyebrow">Collaboration</p>
+                <h2>Nearby NGO support</h2>
+              </div>
+              <span id="ngoCount" class="status-pill medium">0 notified</span>
+            </div>
+            <div id="ngoList" class="list-stack"></div>
+          </article>
+
+          <article class="panel activity-panel">
+            <div class="panel-heading">
+              <div>
+                <p class="eyebrow">Live trace</p>
+                <h2>System activity</h2>
+              </div>
+            </div>
+            <ol id="activityLog" class="activity-log"></ol>
+          </article>
+        </section>
+      </section>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>

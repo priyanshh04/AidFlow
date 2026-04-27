@@ -1,0 +1,94 @@
+<svg width="1600" height="980" viewBox="0 0 1600 980" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1600" height="980" fill="#F6F7FB"/>
+  <rect x="50" y="40" width="1500" height="900" rx="28" fill="white" stroke="#D8DDEA" stroke-width="2"/>
+  <text x="90" y="105" fill="#1A3263" font-family="Segoe UI, Arial, sans-serif" font-size="34" font-weight="700">AidFlow Architecture Diagram</text>
+  <text x="90" y="142" fill="#637089" font-family="Segoe UI, Arial, sans-serif" font-size="18">Client-side prototype with authentication flow, Gemini-based extraction, workflow orchestration, and radius-based coordination.</text>
+
+  <defs>
+    <marker id="arrowArch" markerWidth="14" markerHeight="14" refX="11" refY="7" orient="auto">
+      <path d="M0 0L14 7L0 14V0Z" fill="#2E7DDB"/>
+    </marker>
+  </defs>
+
+  <rect x="95" y="200" width="280" height="660" rx="28" fill="#EEF5FF" stroke="#2E7DDB" stroke-width="2"/>
+  <text x="145" y="255" fill="#153B72" font-family="Segoe UI, Arial, sans-serif" font-size="28" font-weight="700">Users</text>
+
+  <rect x="130" y="300" width="210" height="125" rx="22" fill="white" stroke="#2E7DDB" stroke-width="2"/>
+  <text x="163" y="350" fill="#153B72" font-family="Segoe UI, Arial, sans-serif" font-size="24" font-weight="700">Verified NGOs</text>
+  <text x="163" y="386" fill="#4E6885" font-family="Segoe UI, Arial, sans-serif" font-size="18">Submit reports</text>
+  <text x="163" y="412" fill="#4E6885" font-family="Segoe UI, Arial, sans-serif" font-size="18">Create official tasks</text>
+
+  <rect x="130" y="485" width="210" height="125" rx="22" fill="white" stroke="#37A66B" stroke-width="2"/>
+  <text x="168" y="535" fill="#17543A" font-family="Segoe UI, Arial, sans-serif" font-size="24" font-weight="700">Volunteers</text>
+  <text x="168" y="571" fill="#4E6885" font-family="Segoe UI, Arial, sans-serif" font-size="18">Accept tasks</text>
+  <text x="168" y="597" fill="#4E6885" font-family="Segoe UI, Arial, sans-serif" font-size="18">Provide feedback</text>
+
+  <rect x="130" y="670" width="210" height="125" rx="22" fill="white" stroke="#DB9D38" stroke-width="2"/>
+  <text x="160" y="720" fill="#80520C" font-family="Segoe UI, Arial, sans-serif" font-size="24" font-weight="700">Coordinators</text>
+  <text x="160" y="756" fill="#4E6885" font-family="Segoe UI, Arial, sans-serif" font-size="18">Track task status</text>
+  <text x="160" y="782" fill="#4E6885" font-family="Segoe UI, Arial, sans-serif" font-size="18">Review observations</text>
+
+  <rect x="440" y="170" width="430" height="710" rx="28" fill="#F9FBFF" stroke="#C9D8F2" stroke-width="2"/>
+  <text x="480" y="228" fill="#153B72" font-family="Segoe UI, Arial, sans-serif" font-size="28" font-weight="700">AidFlow Frontend</text>
+  <text x="480" y="260" fill="#637089" font-family="Segoe UI, Arial, sans-serif" font-size="18">HTML, CSS, JavaScript prototype</text>
+
+  <rect x="480" y="305" width="350" height="105" rx="22" fill="white" stroke="#2E7DDB" stroke-width="2"/>
+  <text x="518" y="350" fill="#153B72" font-family="Segoe UI, Arial, sans-serif" font-size="23" font-weight="700">Login / Signup UI</text>
+  <text x="518" y="382" fill="#4E6885" font-family="Segoe UI, Arial, sans-serif" font-size="18">NGO and volunteer entry flow</text>
+
+  <rect x="480" y="450" width="350" height="115" rx="22" fill="white" stroke="#37A66B" stroke-width="2"/>
+  <text x="518" y="495" fill="#17543A" font-family="Segoe UI, Arial, sans-serif" font-size="23" font-weight="700">Report Intake UI</text>
+  <text x="518" y="527" fill="#4E6885" font-family="Segoe UI, Arial, sans-serif" font-size="18">PDF / Word / PPT upload</text>
+  <text x="518" y="553" fill="#4E6885" font-family="Segoe UI, Arial, sans-serif" font-size="18">Operator notes + task preview</text>
+
+  <rect x="480" y="605" width="350" height="145" rx="22" fill="white" stroke="#DB9D38" stroke-width="2"/>
+  <text x="518" y="650" fill="#80520C" font-family="Segoe UI, Arial, sans-serif" font-size="23" font-weight="700">Network Dashboard</text>
+  <text x="518" y="682" fill="#4E6885" font-family="Segoe UI, Arial, sans-serif" font-size="18">25 km search map</text>
+  <text x="518" y="708" fill="#4E6885" font-family="Segoe UI, Arial, sans-serif" font-size="18">Volunteer / NGO cards</text>
+  <text x="518" y="734" fill="#4E6885" font-family="Segoe UI, Arial, sans-serif" font-size="18">Status and activity timeline</text>
+
+  <rect x="935" y="170" width="300" height="335" rx="28" fill="#FFF8EA" stroke="#E2A53B" stroke-width="2"/>
+  <text x="975" y="228" fill="#80520C" font-family="Segoe UI, Arial, sans-serif" font-size="28" font-weight="700">Google AI Layer</text>
+
+  <rect x="970" y="295" width="230" height="120" rx="22" fill="white" stroke="#E2A53B" stroke-width="2"/>
+  <text x="1010" y="345" fill="#80520C" font-family="Segoe UI, Arial, sans-serif" font-size="22" font-weight="700">Gemini 3 Flash</text>
+  <text x="1010" y="379" fill="#6D6041" font-family="Segoe UI, Arial, sans-serif" font-size="18">`generateContent`</text>
+
+  <rect x="935" y="555" width="300" height="325" rx="28" fill="#EEF9F2" stroke="#37A66B" stroke-width="2"/>
+  <text x="975" y="613" fill="#17543A" font-family="Segoe UI, Arial, sans-serif" font-size="28" font-weight="700">Processing Logic</text>
+
+  <rect x="970" y="695" width="230" height="140" rx="22" fill="white" stroke="#37A66B" stroke-width="2"/>
+  <text x="1000" y="740" fill="#17543A" font-family="Segoe UI, Arial, sans-serif" font-size="22" font-weight="700">Workflow Engine</text>
+  <text x="1000" y="774" fill="#4E6885" font-family="Segoe UI, Arial, sans-serif" font-size="18">Urgency scoring</text>
+  <text x="1000" y="800" fill="#4E6885" font-family="Segoe UI, Arial, sans-serif" font-size="18">25 km matching</text>
+
+  <rect x="1300" y="170" width="210" height="710" rx="28" fill="#F8F4FF" stroke="#8A61D2" stroke-width="2"/>
+  <text x="1338" y="228" fill="#513089" font-family="Segoe UI, Arial, sans-serif" font-size="28" font-weight="700">Outputs</text>
+
+  <rect x="1332" y="305" width="145" height="110" rx="22" fill="white" stroke="#8A61D2" stroke-width="2"/>
+  <text x="1354" y="350" fill="#513089" font-family="Segoe UI, Arial, sans-serif" font-size="22" font-weight="700">Task</text>
+  <text x="1354" y="382" fill="#64547D" font-family="Segoe UI, Arial, sans-serif" font-size="18">Verified need</text>
+
+  <rect x="1332" y="470" width="145" height="110" rx="22" fill="white" stroke="#8A61D2" stroke-width="2"/>
+  <text x="1351" y="515" fill="#513089" font-family="Segoe UI, Arial, sans-serif" font-size="22" font-weight="700">Matches</text>
+  <text x="1351" y="547" fill="#64547D" font-family="Segoe UI, Arial, sans-serif" font-size="18">Nearby people</text>
+
+  <rect x="1338" y="605" width="149" height="118" rx="22" fill="white" stroke="#8A61D2" stroke-width="2"/>
+  <text x="1354" y="652" fill="#513089" font-family="Segoe UI, Arial, sans-serif" font-size="22" font-weight="700">Insights</text>
+  <text x="1354" y="680" fill="#64547D" font-family="Segoe UI, Arial, sans-serif" font-size="16">History + feedback</text>
+
+  <path d="M340 360H480" stroke="#2E7DDB" stroke-width="5" marker-end="url(#arrowArch)"/>
+  <path d="M340 548H480" stroke="#37A66B" stroke-width="5" marker-end="url(#arrowArch)"/>
+  <path d="M340 733H480" stroke="#DB9D38" stroke-width="5" marker-end="url(#arrowArch)"/>
+
+  <path d="M830 505H935" stroke="#2E7DDB" stroke-width="5" marker-end="url(#arrowArch)"/>
+  <path d="M1085 415V555" stroke="#E2A53B" stroke-width="5" marker-end="url(#arrowArch)"/>
+  <path d="M830 680H935" stroke="#37A66B" stroke-width="5" marker-end="url(#arrowArch)"/>
+
+  <path d="M1235 350H1332" stroke="#2E7DDB" stroke-width="5" marker-end="url(#arrowArch)"/>
+  <path d="M1200 765H1278V525H1332" stroke="#37A66B" stroke-width="5" fill="none" marker-end="url(#arrowArch)"/>
+  <path d="M1200 810H1268V694H1338" stroke="#8A61D2" stroke-width="5" fill="none"/>
+
+  <rect x="950" y="630" width="270" height="46" rx="12" fill="#DFF4E8"/>
+  <text x="970" y="659" fill="#17543A" font-family="Segoe UI, Arial, sans-serif" font-size="15" font-weight="700">Local fallback analyzer available</text>
+</svg>

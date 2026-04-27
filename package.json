@@ -1,0 +1,12 @@
+{
+  "name": "aidflow-prototype",
+  "version": "1.0.0",
+  "private": true,
+  "description": "AidFlow prototype with lightweight Node backend for auth and Gemini analysis.",
+  "scripts": {
+    "start": "node server/server.js"
+  },
+  "dependencies": {
+    "@google/generative-ai": "^0.24.1"
+  }
+}
