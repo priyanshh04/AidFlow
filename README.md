@@ -1,4 +1,4 @@
-# AidFlow Prototype
+# AidFlow
 
 Dark, minimal prototype for smart resource allocation between NGOs and volunteers, now backed by a lightweight Node.js server.
 
