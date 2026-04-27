@@ -17,6 +17,26 @@ Dark, minimal prototype for smart resource allocation between NGOs and volunteer
 - Working action buttons for volunteer notifications, NGO support requests, login/logout, demo loading, and activity clearing.
 - Searchable 25 km network map for nearby drives, NGOs, and volunteers.
 
+## 📁 Project Structure
+
+AidFlow/
+│
+├── index.html
+├── styles.css
+├── app.js
+├── package.json
+├── README.md
+├── .env.example
+│
+├── assets/
+│   └── aidflow-logo.png
+│
+├── server/
+│   ├── server.js
+│   └── mock-store.js
+│
+└── sample-emergency-report.doc
+
 ## Run
 
 1. Set `GEMINI_API_KEY` in your environment if you want live Gemini analysis.
