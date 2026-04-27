@@ -17,7 +17,7 @@ Dark, minimal prototype for smart resource allocation between NGOs and volunteer
 - Working action buttons for volunteer notifications, NGO support requests, login/logout, demo loading, and activity clearing.
 - Searchable 25 km network map for nearby drives, NGOs, and volunteers.
 
-## 📁 Project Structure
+## Project Structure
 
 ```bash
 AidFlow/
