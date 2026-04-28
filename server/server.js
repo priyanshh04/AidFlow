@@ -249,6 +249,11 @@ const server = http.createServer(async (req, res) => {
   const requestUrl = new URL(req.url, `http://${req.headers.host}`);
   const pathname = requestUrl.pathname;
 
+  if (req.method === "GET" && pathname === "/health") {
+    res.writeHead(200, { "Content-Type": "text/plain" });
+    return res.end("OK");
+  }
+
   try {
     if (req.method === "GET" && pathname === "/api/bootstrap") {
       return sendJson(res, 200, getBootstrap());
